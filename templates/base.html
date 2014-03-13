@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ article.lang if article and article.lang else DEFAULT_LANG }}">
+<head>
+<meta charset="utf-8"/>
+<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+</head>
+<body>
+{% block content %}{% endblock %}
+<footer>
+<p><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/cc.png" alt="CC by 3.0"/> Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a></p>
+</footer>
+</body>
+</html>
