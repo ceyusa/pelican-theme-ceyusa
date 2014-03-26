@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} : {{ article.title }}{% endblock %}
+{% block content %}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+<header>
+<h2><a rel="bookmark" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+</header>
+<footer>
+{% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}" pubdate="pubdate">{{ article.locale_date }}</time>{% endif %}
+{% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
+</footer>
+{{ article.content }}
+</article>
+
+<aside>
+  <nav>
+    <ul>
+{% if article.prev_article %}
+      <li>« <a rel="bookmark" href="{{ SITEURL }}/{{ article.prev_article.url }}" title="{{ article.prev_article.title }}">{{ article.prev_article.title }}</a></li>
+{% endif %}
+{% if article.next_article %}
+      <li ><a rel="bookmark" href="{{ SITEURL }}/{{ article.next_article.url }}" title="{{ article.next_article.title }}">{{ article.next_article.title }}</a> »</li>
+{% endif %}
+    </ul>
+  </nav>
+</aside>
+
+{% endblock content %}
