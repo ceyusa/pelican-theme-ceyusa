@@ -22,6 +22,11 @@ textarea, code, tt, pre {
     font-family: 'Inconsolata', sans-serif, monospace!important;
 }
 
+.line-block {
+    font-family: 'Inconsolata', serif, monospace;
+    padding-left: 6px;
+}
+
 footer.license {
     font-size: smaller;
     display: block;
