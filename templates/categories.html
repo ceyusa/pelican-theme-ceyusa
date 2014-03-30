@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} : Categorías{% endblock %}
+{% block content %}
+<section>
+  <header>
+    <h2>Categorías</h2>
+  </header>
+  <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <ul>
+{% for category, articles in categories|sort %}
+      <li><a href="{{ SITEURL }}/{{ category.url }}" rel="bookmark" title="Permalink to {{ category|striptags }}">{{ category }}</a> ({{ articles|count }})</li>
+{% endfor %}
+    </ul>
+  </nav>
+</section>
+{% endblock content %}
