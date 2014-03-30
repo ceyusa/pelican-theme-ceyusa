@@ -10,6 +10,7 @@ article {
     /* http://chrislema.com/what-is-the-right-font-size-for-your-blog/ */
     font-size: 18px;
     line-heigth: 27px;
+    margin: 0 10% 0 10%;
 }
 
 textarea, code, tt, pre {
