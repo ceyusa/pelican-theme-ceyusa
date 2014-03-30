@@ -27,6 +27,11 @@ textarea, code, tt, pre {
     padding-left: 6px;
 }
 
+blockquote {
+    border-left: 6px solid gray;
+    padding-left: 6px;
+}
+
 nav.menu ul {
     list-style: none;
     margin: 0;
