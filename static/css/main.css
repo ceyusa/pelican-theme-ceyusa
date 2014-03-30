@@ -13,6 +13,11 @@ article {
     margin: 0 10% 0 10%;
 }
 
+/* date and author */
+article footer {
+    font-size: smaller;
+}
+
 textarea, code, tt, pre {
     font-family: 'Inconsolata', sans-serif, monospace!important;
     font-size: 18px;
