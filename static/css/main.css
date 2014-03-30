@@ -18,8 +18,10 @@ textarea, code, tt, pre {
     font-size: 18px;
 }
 
-nav li {
-    display: inline;
-    padding: 0;
-    content: none;
+footer.license {
+    font-size: smaller;
+    display: block;
+    color: gray;
+    clear: both;
+    text-align: center;
 }
