@@ -1,0 +1,24 @@
+@import url("pygments.css");
+@import url("html4css1.css");
+
+body {
+    /* http://www.buildablog.co/whats-the-best-font-to-use-for-your-blog-or-website/ */
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+article {
+    /* http://chrislema.com/what-is-the-right-font-size-for-your-blog/ */
+    font-size: 18px;
+    line-heigth: 27px;
+}
+
+textarea, code, tt, pre {
+    font-family: 'Inconsolata', sans-serif, monospace!important;
+    font-size: 18px;
+}
+
+nav li {
+    display: inline;
+    padding: 0;
+    content: none;
+}
