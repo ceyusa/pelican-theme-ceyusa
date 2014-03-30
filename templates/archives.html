@@ -2,8 +2,7 @@
 {% block title %}{{ super() }} : Archivo{% endblock %}
 {% block content %}
 <header>
-<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-<h2>Archivos</h2>
+<h2>Archivo</h2>
 </header>
   {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
 <nav  itemscope itemtype="http://www.schema.org/SiteNavigationElement">
