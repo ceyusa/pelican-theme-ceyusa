@@ -5,7 +5,7 @@
   <header>
     <h2>Autores</h2>
   </header>
-  <nav  itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+  <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     <ul>
 {% for author, articles in authors|sort %}
       <li><a href="{{ SITEURL }}/{{ author.url }}" rel="bookmark" title="Permalink to {{ author|striptags }}">{{ author }}</a> ({{ articles|count }})</li>
