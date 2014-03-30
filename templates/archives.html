@@ -6,7 +6,7 @@
 <h2>Archivos</h2>
 </header>
   {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
-<nav>
+<nav  itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 <h2>{{ year }}</h2>
 <ol>
     {% for article in date_year %}
