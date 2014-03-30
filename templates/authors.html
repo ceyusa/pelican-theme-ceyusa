@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} : Autores{% endblock %}
+{% block content %}
+<section>
+  <header>
+    <h2>Autores</h2>
+  </header>
+  <nav  itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+{% for author, articles in authors|sort %}
+    <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
+{% endfor %}
+  </nav>
+</section>
+{% endblock content %}
