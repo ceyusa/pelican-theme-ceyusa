@@ -22,6 +22,32 @@ article a, article a:visited {
     color: brown;
 };
 
+/* neighbours */
+nav.pager {
+    margin: 0 10% 0 10%;
+}
+
+nav.pager ul {
+    width: 100%;
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+nav.pager li {
+    display: table-cell;
+    width: 50%
+}
+
+nav.pager li:last-child {
+    text-align: right;
+}
+
+nav.pager li > a {
+    display: inline-block;
+    color: black;
+}
+
 textarea, code, tt, pre {
     font-family: 'Inconsolata', sans-serif, monospace!important;
 }
