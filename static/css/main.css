@@ -18,6 +18,10 @@ article footer {
     font-size: smaller;
 }
 
+article a, article a:visited {
+    color: brown;
+};
+
 textarea, code, tt, pre {
     font-family: 'Inconsolata', sans-serif, monospace!important;
 }
