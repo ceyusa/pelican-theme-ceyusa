@@ -94,3 +94,7 @@ footer.license {
     clear: both;
     text-align: center;
 }
+
+footer.license a {
+    color: black;
+}
