@@ -18,6 +18,29 @@ article a, article a:visited {
     color: brown;
 }
 
+/* base index */
+section {
+    margin: 0 10% 0 10%;
+    font-size: normal;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section a {
+    color: blue;
+}
+
+section a:visited {
+    color: blueviolet;
+}
+
+section time {
+    font-style: italic;
+    margin-left: 0.5em;
+}
+
 /* neighbours */
 nav.pager {
     margin: 30px 10% 30px 10%;
