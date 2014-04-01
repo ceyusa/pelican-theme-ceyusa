@@ -44,7 +44,7 @@ section h2 {
 }
 
 section a {
-    color: blue;
+    color: brown;
 }
 
 section a:visited {
@@ -75,6 +75,7 @@ nav.pager li {
 
 nav.pager li > a {
     display: inline-block;
+    color: brown;
 }
 
 nav.pager a:hover {
