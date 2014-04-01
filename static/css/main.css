@@ -16,7 +16,7 @@ article footer {
 
 article a, article a:visited {
     color: brown;
-};
+}
 
 /* neighbours */
 nav.pager {
