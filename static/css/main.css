@@ -5,7 +5,7 @@
 h1 {
     position: absolute;
     top: 0;
-    margin: .25em .25em;
+    margin: 0.2em 0.2em;
     padding: 0;
     overflow: hidden;
 }
@@ -104,6 +104,7 @@ blockquote {
 
 nav.menu {
     background: #ffaa00;
+    height: 3em;
 
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -123,7 +124,7 @@ nav.menu li {
 
 nav.menu li > a {
     display: inline-block;
-    padding: 10px;
+    padding: 1em;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
