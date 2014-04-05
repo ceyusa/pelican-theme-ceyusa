@@ -131,6 +131,7 @@ nav.menu li > a {
 }
 
 footer.license {
+    margin-top: 5em;
     font-size: smaller;
     display: block;
     color: gray;
