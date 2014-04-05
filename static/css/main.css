@@ -15,7 +15,7 @@ h1 > a {
     text-decoration: none;
 }
 
-article {
+article, nav#index {
     /* http://chrislema.com/what-is-the-right-font-size-for-your-blog/ */
     font-size: 18px;
     line-heigth: 27px;
@@ -23,12 +23,18 @@ article {
 }
 
 /* date and author */
-article footer {
+article footer, nav#index footer {
     font-size: smaller;
 }
 
-article a, article a:visited {
+article a, article a:visited, nav#index a, nav#index a:visited {
     color: brown;
+}
+
+nav#index h3 {
+    border-top-style: dotted;
+    border-width: 1px;
+    width: 50%;
 }
 
 /* base index */
