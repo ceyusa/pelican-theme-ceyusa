@@ -174,3 +174,9 @@ li.tag-4 {
     font-size: 1em;
     line-height: 3;
 }
+
+/* https://ghost.org/forum/themes/585-css-styles-for-youtube-and-vimeo-videos/ */
+article .youtube {
+    width: 80%;
+    margin: 30px auto 20px auto;
+}
