@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ article.lang if article and article.lang else DEFAULT_LANG }}">
 <head>
-<meta name="author" content="Victor Manuel Jaquez Leal" />
-<meta name="description" content="Blog ceyusa.com" />
-<meta charset="utf-8" />
-<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
-<link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
+  <meta name="author" content="Victor Manuel Jaquez Leal" />
+  <meta name="description" content="Blog ceyusa.com" />
+  <meta charset="utf-8" />
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
+  <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
 </head>
 <body>
-<header>
-<h1><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>
-<nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="menu">
-<ul>
-<li><a rel="bookmark" href="{{ SITEURL }}/archives.html">Archivo</a>
-<li><a rel="bookmark" href="{{ SITEURL }}/tags.html">Etiquetas</a>
-</ul>
-</nav>
-</header>
+  <header>
+    <h1><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>
+    <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="menu">
+      <ul>
+	<li><a rel="bookmark" href="{{ SITEURL }}/archives.html">Archivo</a>
+	<li><a rel="bookmark" href="{{ SITEURL }}/tags.html">Etiquetas</a>
+      </ul>
+    </nav>
+  </header>
 {% block content %}{% endblock %}
-<footer class="license">
-<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/cc.png" alt="CC by 3.0"/>
-<p>Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>
-</footer>
+  <footer class="license">
+    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/cc.png" alt="CC by 3.0"/>
+    <p>Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>
+  </footer>
 </body>
 </html>
