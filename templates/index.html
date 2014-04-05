@@ -2,13 +2,13 @@
 {% block content %}
 {% if articles %}
 <article itemscope itemtype="http://schema.org/BlogPosting">
-<header>
-<h2><a rel="bookmark" href="{{ SITEURL }}/{{ articles[0].url }}">{{ articles[0].title }}</a></h2>
-</header>
-<footer>
-{% if not HIDE_DATE %}<time datetime="{{ articles[0].date.isoformat() }}" pubdate="pubdate">{{ articles[0].locale_date }}</time>{% endif %}
-{% if articles[0].author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ articles[0].author.url }}">{{ articles[0].author }}</a></address>{% endif %}
-</footer>
+  <header>
+    <h2><a rel="bookmark" href="{{ SITEURL }}/{{ articles[0].url }}">{{ articles[0].title }}</a></h2>
+  </header>
+  <footer>
+    {% if not HIDE_DATE %}<time datetime="{{ articles[0].date.isoformat() }}" pubdate="pubdate">{{ articles[0].locale_date }}</time>{% endif %} 
+    {% if articles[0].author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ articles[0].author.url }}">{{ articles[0].author }}</a></address>{% endif %}
+  </footer>
 {{ articles[0].content }}
 </article>
 {% endif %}
