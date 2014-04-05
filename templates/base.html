@@ -7,6 +7,9 @@
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
   <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
+{% if FEED_ALL_ATOM %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+{% endif %}
 </head>
 <body>
   <header>
