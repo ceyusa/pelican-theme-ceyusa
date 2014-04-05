@@ -143,3 +143,34 @@ footer.license {
 footer.license a {
     color: black;
 }
+
+ul.tag-cloud {
+    list-style: none;
+    margin: 3em 15% 3em 15%;
+    padding: 0;
+    text-align: center;
+}
+
+ul.tag-cloud li {
+    display: inline;
+}
+
+li.tag-1 {
+    font-size: 3em;
+    line-height: 1;
+}
+
+li.tag-2 {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+li.tag-3 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+li.tag-4 {
+    font-size: 1em;
+    line-height: 3;
+}

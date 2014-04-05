@@ -2,13 +2,10 @@
 {% block title %}{{ super() }} : Etiquetas{% endblock %}
 {% block content %}
 <section>
-  <header>
-    <h2>Directorio de Etiquetas</h2>
-  </header>
   <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-    <ul>
-{% for tag, articles in tags|sort %}
-      <li><a href="{{ SITEURL }}/{{ tag.url }}" rel="bookmark" title="Permalink to {{ tag|striptags }}">{{ tag | escape }}</a> ({{ articles|count }})</li>
+    <ul class="tag-cloud">
+{% for tag in tag_cloud %}
+      <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}" rel="bookmark" title="Permalink to {{ tag.0 | striptags }}">{{ tag.0 | escape }}</a></li>
 {% endfor %}
     </ul>
   </nav>
