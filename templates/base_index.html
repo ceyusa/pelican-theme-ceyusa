@@ -10,7 +10,7 @@
     <h3>{{ year }}</h3>
     <ol>
 {% for article in date_year %}
-      <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a> <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time></li>
+      <li><a href="{{ SITEURL }}/{{ article.url|e }}" rel="bookmark" title="Permalink to {{ article.title|e|striptags }}">{{ article.title }}</a> <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time></li>
 {% endfor %}
     </ol>
 {% endfor %}
