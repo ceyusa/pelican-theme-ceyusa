@@ -184,4 +184,6 @@ li.tag-4 {
 article .youtube {
     width: 80%;
     margin: 30px auto 20px auto;
+    border-width: 0px;
+    text-align: center;
 }
