@@ -187,3 +187,20 @@ article .youtube {
     border-width: 0px;
     text-align: center;
 }
+
+/* sidebar */
+nav#sidebar {
+    float: left;
+    padding: 1em;
+}
+
+nav#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#sidebar li {
+    margin: 0;
+    padding: 0;
+}
