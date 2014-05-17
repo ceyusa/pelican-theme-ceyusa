@@ -2,6 +2,9 @@
 {% block title %}{{ super() }} : Etiquetas{% endblock %}
 {% block content %}
 <section>
+  <header>
+    <h2>Etiquetas</h2>
+  </header>
   <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     <ul class="tag-cloud">
 {% for tag in tag_cloud %}
