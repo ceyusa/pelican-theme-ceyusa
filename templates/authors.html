@@ -8,7 +8,7 @@
   <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     <ul>
 {% for author, articles in authors|sort %}
-      <li><a href="{{ SITEURL }}/{{ author.url|e }}" rel="bookmark" title="Permalink to {{ author|e|striptags }}">{{ author }}</a> ({{ articles|count }})</li>
+      <li><a href="{{ SITEURL }}/{{ author.url|urlencode }}" rel="bookmark" title="Permalink to {{ author|e|striptags }}">{{ author }}</a> ({{ articles|count }})</li>
 {% endfor %}
     </ul>
   </nav>

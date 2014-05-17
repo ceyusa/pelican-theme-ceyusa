@@ -9,7 +9,7 @@
   </header>
   <footer>
     {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>{% endif %} 
-    {% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|e }}">{{ article.author }}</a></address>{% endif %}
+    {% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|urlencode }}">{{ article.author }}</a></address>{% endif %}
   </footer>
 {{ article.content }}
 </article>
@@ -20,11 +20,11 @@
     {% else %}
       {% if loop.index < 10 %}
   <header>
-    <h3><a rel="bookmark" href="{{ SITEURL }}/{{ article.url|e }}">{{ article.title }}</a></h3>
+    <h3><a rel="bookmark" href="{{ SITEURL }}/{{ article.url|urlencode }}">{{ article.title }}</a></h3>
   </header>
   <footer>
     {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>{% endif %} 
-    {% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|e }}">{{ article.author }}</a></address>{% endif %}
+    {% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|urlencode }}">{{ article.author }}</a></address>{% endif %}
   </footer>
       {% endif %}
     {% endif %}
