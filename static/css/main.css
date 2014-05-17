@@ -18,7 +18,7 @@ h1 > a {
 article, nav#index {
     /* http://chrislema.com/what-is-the-right-font-size-for-your-blog/ */
     font-size: 18px;
-    line-heigth: 27px;
+    line-height: 27px;
     margin: 0 10% 0 10%;
 }
 
@@ -40,7 +40,7 @@ nav#index h3 {
 /* base index */
 section {
     margin: 0 10% 0 10%;
-    font-size: normal;
+    font-size: initial;
 }
 
 section h2 {
