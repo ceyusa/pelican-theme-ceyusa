@@ -13,6 +13,7 @@
 {% if FEED_ALL_RSS %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 {% endif %}
+{% include "analytics.html" ignore missing %}
 </head>
 <body>
   <header>
