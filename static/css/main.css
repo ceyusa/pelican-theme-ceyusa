@@ -107,7 +107,10 @@ blockquote {
     padding-left: 6px;
 }
 
+/* main menu */
 nav.menu {
+    z-index: -1;
+
     background: #ffaa00;
     height: 3em;
 
