@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ article.lang if article and article.lang else DEFAULT_LANG }}">
 <head>
-  <meta name="author" content="Victor Manuel Jaquez Leal" />
-  <meta name="description" content="Blog ceyusa.com" />
+  <meta name="author" content="{{ AUTHOR }}" />
+  <meta name="description" content="Ceyusa's blog / El blog de Ceyusa" />
   <meta charset="utf-8" />
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
