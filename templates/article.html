@@ -6,7 +6,9 @@
 <h2>{{ article.title }}</h2>
 </header>
 <footer>
-{% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>{% endif %}{% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|urlencode }}">{{ article.author }}</a></address>{% endif %}
+{% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>{% endif %}
+{% if article.tags %}<p>{% for tag in article.tags|sort %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> {% endfor %}</p>{% endif %}
+{% if article.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ article.author.url|urlencode }}">{{ article.author }}</a></address>{% endif %}
 </footer>
 {{ article.content }}
 </article>

@@ -25,6 +25,8 @@ article, nav#index {
 /* date and author */
 article footer, nav#index footer {
     font-size: smaller;
+    padding-left: 2em;
+    line-height: 1.2em;
 }
 
 article a, article a:visited, nav#index a, nav#index a:visited {
