@@ -33,6 +33,17 @@ article a, article a:visited, nav#index a, nav#index a:visited {
     color: brown;
 }
 
+ul#tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#tags li {
+    display: inline;
+    padding-right: 0.5em;
+}
+
 nav#index h3 {
     border-top-style: dotted;
     border-width: 1px;
