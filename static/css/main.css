@@ -153,6 +153,10 @@ nav.menu li > a {
 }
 
 form {
+    text-align: center;
+}
+
+form#idx {
     float: right;
     padding: 1em;
 }

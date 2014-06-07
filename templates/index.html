@@ -3,7 +3,7 @@
 {% if articles %}
   {% for article in articles %}
     {% if loop.first %}
-<form action="/cgi-bin/search.py"><input type="text" name="q" placeholder="búsqueda..." required /> <input type="submit" value="Buscar" /></form>
+<form id="idx" action="/cgi-bin/search.py"><input type="text" name="q" placeholder="búsqueda..." required /> <input type="submit" value="Buscar" /></form>
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h2><a rel="bookmark" href="{{ SITEURL }}/{{ article.url|e }}">{{ article.title }}</a></h2>
