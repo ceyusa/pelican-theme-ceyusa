@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} : {{ page.title }}{% endblock %}
+{% block content %}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+<header>
+<h2>{{ page.title }}</h2>
+</header>
+<footer>
+{% if not HIDE_DATE %}<time datetime="{{ page.date.isoformat() }}" itemprop="datePublished">{{ page.locale_date }}</time>{% endif %}
+{% if page.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ page.author.url|urlencode }}">{{ page.author }}</a></address>{% endif %}
+</footer>
+{{ page.content }}
+</article>
+{% endblock content %}
