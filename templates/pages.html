@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <header>
+    <h2>Textos misceláneos</h2>
+  </header>
+  <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <ol>
+{% for page in PAGES %}
+      <li><a href="{{ SITEURL }}/{{ page.url|urlencode }}" rel="bookmark" title="Permalink to {{ page.title|e|striptags }}">{{ page.title }}</a> <time datetime="{{ page.date.isoformat() }}" itemprop="datePublished">{{ page.locale_date }}</time></li>
+{% endfor %}
+    </ol>
+  </nav>
+</section>
+{% endblock content %}
