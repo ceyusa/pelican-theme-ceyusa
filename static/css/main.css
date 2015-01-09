@@ -231,6 +231,11 @@ article .youtube {
     text-align: center;
 }
 
+/* for pages, only 70ch width */
+div#content {
+    max-width: 70ch;
+}
+
 /* sidebar */
 nav#sidebar {
     float: left;

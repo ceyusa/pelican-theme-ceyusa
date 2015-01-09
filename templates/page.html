@@ -9,6 +9,8 @@
 {% if not HIDE_DATE %}<time datetime="{{ page.date.isoformat() }}" itemprop="datePublished">{{ page.locale_date }}</time>{% endif %}
 {% if page.author %}<address itemscope itemtype="http://schema.org/Person"><a href="{{ SITEURL }}/{{ page.author.url|urlencode }}">{{ page.author }}</a></address>{% endif %}
 </footer>
+<div id="content">
 {{ page.content }}
+</div>
 </article>
 {% endblock content %}
