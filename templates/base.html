@@ -2,11 +2,13 @@
 <html lang="{{ article.lang if article and article.lang else DEFAULT_LANG }}">
 <head>
   <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="{{ AUTHOR }}" />
   <meta name="description" content="Ceyusa's blog / El blog de Ceyusa" />
   <meta charset="utf-8" />
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" media="Screen"/>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/mobile.css" type="text/css" media="handheld"/>
   <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
 {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
