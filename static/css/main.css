@@ -2,12 +2,22 @@
 @import url("html4css1.css");
 @import url("normalize.css");
 
+header#banner {
+    background: #ffaa00;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+header#banner h1,
+header#banner nav.menu,
+header#banner nav.menu ul,
+header#banner nav.menu ul > * {
+    display: inline;
+}
+
 h1 {
-    position: absolute;
-    top: 0;
     margin: 0.2em 0.2em;
-    padding: 0;
-    overflow: hidden;
 }
 
 h1 > a {
@@ -122,14 +132,7 @@ blockquote {
 
 /* main menu */
 nav.menu {
-    z-index: -1;
-
-    background: #ffaa00;
     height: 3em;
-
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
 
 nav.menu ul {
