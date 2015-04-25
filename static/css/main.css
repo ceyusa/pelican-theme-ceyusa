@@ -131,6 +131,10 @@ textarea, code, tt, pre {
     margin-left: 6px;
 }
 
+.caption {
+    font-size: smaller;
+}
+
 blockquote {
     border-left: 6px solid gray;
     padding-left: 6px;
