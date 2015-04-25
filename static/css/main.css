@@ -43,6 +43,12 @@ article a, article a:visited, nav#index a, nav#index a:visited {
     color: brown;
 }
 
+article img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 ul#tags {
     list-style: none;
     margin: 0;
