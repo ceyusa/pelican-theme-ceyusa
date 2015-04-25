@@ -131,19 +131,9 @@ blockquote {
 }
 
 /* main menu */
-nav.menu {
-    height: 3em;
-}
-
 nav.menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav.menu li {
-    display: inline;
+    white-space: nowrap;
 }
 
 nav.menu li > a {
@@ -155,6 +145,7 @@ nav.menu li > a {
     color: black;
 }
 
+/* search */
 form {
     text-align: center;
 }
