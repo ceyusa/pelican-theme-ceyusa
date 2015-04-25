@@ -256,3 +256,24 @@ nav#sidebar li {
     margin: 0;
     padding: 0;
 }
+
+@media screen and (max-device-width: 640px) {
+    html, body {
+	font: 12px/15px;
+	padding: 3px;
+	margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+    }
+
+    article, nav#index {
+	font-size: inherit;
+	margin: 0 0 0 0;
+    }
+
+    nav#sidebar {
+	display: none;
+    }
+}
