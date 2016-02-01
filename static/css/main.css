@@ -227,14 +227,6 @@ li.tag-4 {
     line-height: 3;
 }
 
-/* https://ghost.org/forum/themes/585-css-styles-for-youtube-and-vimeo-videos/ */
-article .youtube {
-    width: 80%;
-    margin: 30px auto 20px auto;
-    border-width: 0px;
-    text-align: center;
-}
-
 /* for pages, only 70ch width */
 div#content {
     max-width: 70ch;
@@ -255,6 +247,29 @@ nav#sidebar ul {
 nav#sidebar li {
     margin: 0;
     padding: 0;
+}
+
+/* youtube plugin */
+.youtube-4x3 {
+    padding-bottom: 75%;  /* inverse of 4:3 aspect ratio */
+}
+.youtube-16x9 {
+    padding-bottom: 56.25%;  /* inverse of 16:9 aspect ratio */
+}
+.youtube-4x3,
+.youtube-16x9 {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-4x3 iframe,
+.youtube-16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 @media screen and (max-device-width: 640px) {
