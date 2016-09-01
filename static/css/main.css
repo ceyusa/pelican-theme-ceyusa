@@ -250,10 +250,18 @@ nav#sidebar li {
 }
 
 /* youtube plugin */
+.youtube {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .youtube-4x3 {
     padding-bottom: 75%;  /* inverse of 4:3 aspect ratio */
 }
 .youtube-16x9 {
+    padding-top: 25px;
     padding-bottom: 56.25%;  /* inverse of 16:9 aspect ratio */
 }
 .youtube-4x3,
