@@ -31,7 +31,7 @@
       {% endif %}
     {% endif %}
   {% endfor %}
-  {% if loop.length > 1 %}
+  {% if articles|length > 10 %}
    <h3><a rel="bookmark" href="{{ SITEURL }}/archives.html">Más...</a></h3>
 </nav>
   {% endif %}
