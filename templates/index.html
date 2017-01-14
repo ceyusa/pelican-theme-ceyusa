@@ -20,7 +20,7 @@
       {% endif %}
     {# other items #}
     {% else %}
-      {% if loop.index < 10 %}
+      {% if loop.index <= 10 %}
   <header>
     <h3><a rel="bookmark" href="{{ SITEURL }}/{{ article.url|urlencode }}">{{ article.title }}</a></h3>
   </header>
