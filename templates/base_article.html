@@ -1,0 +1,27 @@
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    {%- if INDEX %}
+    <h2><a rel="bookmark" href="{{ SITEURL }}/{{ article.url|e }}">{{ article.title }}</a></h2>
+    {%- else %}
+    <h2>{{ article.title }}</h2>
+    {%- endif %}
+  </header>
+  <footer>
+    {%- if not HIDE_DATE %}
+    <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
+    {%- endif %}
+    {%- if article.tags %}
+    <ul id="tags">
+      {%- for tag in article.tags|sort %}
+      <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {%- if article.author %}
+    <address itemscope itemtype="http://schema.org/Person">
+      <a href="{{ SITEURL }}/{{ article.author.url|urlencode }}">{{ article.author }}</a>
+    </address>
+    {%- endif %}
+  </footer>
+  {{ article.content }}
+</article>
