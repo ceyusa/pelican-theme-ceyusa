@@ -266,27 +266,30 @@ nav#sidebar li {
 
 /* youtube plugin */
 .youtube {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 
 .youtube-4x3 {
     padding-bottom: 75%;  /* inverse of 4:3 aspect ratio */
 }
+
 .youtube-16x9 {
-    padding-top: 25px;
     padding-bottom: 56.25%;  /* inverse of 16:9 aspect ratio */
 }
+
 .youtube-4x3,
 .youtube-16x9 {
+    padding-top: 30px;
     position: relative;
     height: 0;
     overflow: hidden;
 }
+
 .youtube-4x3 iframe,
-.youtube-16x9 iframe {
+.youtube-4x3 object,
+.youtube-4x3 embeded,
+.youtube-16x9 iframe,
+.youtube-16x9 object,
+.youtube-16x9 embed {
     position: absolute;
     top: 0;
     left: 0;
