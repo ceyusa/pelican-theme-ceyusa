@@ -28,15 +28,11 @@
 {% include "analytics.html" ignore missing %}
 </head>
 <body>
-  <header id="banner">
-    <h1><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>
-    <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="menu">
-      <ul>
-	<li><a rel="bookmark" href="{{ SITEURL }}/archives.html">Archivo</a>
-	<li><a rel="bookmark" href="{{ SITEURL }}/tags.html">Etiquetas</a>
-	<li><a rel="bookmark" href="{{ SITEURL }}/pages.html">Textos</a>
-      </ul>
-    </nav>
+  <header id="banner" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <a rel="bookmark" class="logo" href="{{ SITEURL }}/index.html">{{ SITENAME }}</a>
+    <a rel="bookmark" class="button" href="{{ SITEURL }}/archives.html">Archivo</a>
+    <a rel="bookmark" class="button" href="{{ SITEURL }}/tags.html">Etiquetas</a>
+    <a rel="bookmark" class="button" href="{{ SITEURL }}/pages.html">Textos</a>
   </header>
 {% include "sidebar.html" ignore missing %}
 {% block content %}{% endblock %}
