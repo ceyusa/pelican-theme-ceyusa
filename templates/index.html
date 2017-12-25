@@ -3,8 +3,8 @@
 {% if articles %}
   {% for article in articles %}
     {% if loop.first %}
-<form id="idx" action="/cgi-bin/search.py">
-  <input type="text" name="q" placeholder="búsqueda…" required /> <input type="submit" value="Buscar" />
+<form id="idx" action="{{ SITEURL }}/cgi-bin/search.py">
+  <input type="search" name="q" placeholder="búsqueda…" /> <input type="submit" value="🔎" />
 </form>
 {%- set INDEX = True %}
 {% include "base_article.html"%}
