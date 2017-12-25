@@ -588,3 +588,12 @@ article {
   text-align: center; }
   .license p, .license a {
     font-size: 0.75em; }
+
+aside {
+  float: left; }
+  aside ul {
+    list-style: none; }
+
+@media screen and (max-width: 767px) {
+  aside {
+    display: none; } }
