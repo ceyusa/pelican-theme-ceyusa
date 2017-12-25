@@ -16,7 +16,7 @@ html, * {
 body {
   margin: 0;
   color: #212121;
-  background: #f8f8f8; }
+  background: #ddd; }
 
 article, aside, section, figcaption, figure, main, details, menu {
   display: block; }
@@ -512,3 +512,13 @@ h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
 
 ul.auto-toc {
   list-style-type: none; }
+
+article {
+  margin: 0 10% 0 10%;
+  padding: 0.5em 2em 0.5em 2em;
+  background: white; }
+
+@media screen and (max-width: 767px) {
+  article {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; } }
