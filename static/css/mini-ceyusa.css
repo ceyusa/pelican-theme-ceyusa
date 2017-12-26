@@ -84,9 +84,9 @@ hr {
   border: 0;
   overflow: visible;
   line-height: 1.25em;
-  margin: 0.5rem;
-  height: 0;
-  border-top: 0.05556rem solid #8c8c8c; }
+  margin: 0.5rem auto;
+  height: 0.05556rem;
+  background: linear-gradient(to right, #bdbdbd, #8c8c8c, #bdbdbd); }
 
 blockquote {
   display: block;
@@ -116,7 +116,8 @@ code {
 pre {
   overflow: auto;
   border-radius: 0 0.11111rem 0.11111rem 0;
-  background: #e6e6e6;
+  background: inherited;
+  color: inherited;
   padding: 0.75rem;
   margin: 0.5rem; }
 
