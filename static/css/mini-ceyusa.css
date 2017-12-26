@@ -1109,3 +1109,8 @@ aside {
   .tag-cloud .tag-4 a {
     font-size: 1em;
     line-height: 3; }
+
+/* for pages, only 70ch width */
+#content {
+  max-width: 70ch; }
+
