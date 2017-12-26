@@ -1027,11 +1027,14 @@ article {
     text-decoration: none; }
     article header a:visited {
       color: brown; }
+  article footer a, article footer time, article footer address {
+    font-size: 0.875rem; }
   article footer ul {
     margin: 0;
     padding: 0;
     list-style: none; }
     article footer ul li {
+      font-size: 0.875rem;
       display: inline; }
     article footer ul a:visited {
       color: brown; }
@@ -1057,6 +1060,8 @@ article {
     border-top-style: dotted;
     border-width: 1px;
     width: 50%; }
+  #index footer a, #index footer time, #index footer address {
+    font-size: 0.875rem; }
 
 .pager {
   margin: 0 10% 0 10%;
