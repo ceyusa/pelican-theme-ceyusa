@@ -1114,3 +1114,7 @@ aside {
 #content {
   max-width: 70ch; }
 
+/* poetry */
+.line-block .line {
+  font-family: monospace;
+  margin-left: 2rem; }
