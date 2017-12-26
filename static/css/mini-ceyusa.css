@@ -1087,3 +1087,25 @@ aside {
   #idx {
     float: none;
     margin: 0 0; } }
+/* tag cloud */
+.tag-cloud {
+  list-style: none;
+  text-align: center; }
+  .tag-cloud li {
+    display: inline; }
+    .tag-cloud li a {
+      text-decoration: none; }
+      .tag-cloud li a:visited {
+        color: brown; }
+  .tag-cloud .tag-1 a {
+    font-size: 3em;
+    line-height: 1; }
+  .tag-cloud .tag-2 a {
+    font-size: 2em;
+    line-height: 1.5; }
+  .tag-cloud .tag-3 a {
+    font-size: 1.5em;
+    line-height: 2; }
+  .tag-cloud .tag-4 a {
+    font-size: 1em;
+    line-height: 3; }
