@@ -1009,40 +1009,105 @@ ul.auto-toc {
 article {
   margin: 0 10% 0 10%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background: white; }
+  background: white;
+  color: #212121; }
   article a {
-    color: brown; }
+    color: brown;
+    font-size: inherit; }
   article header {
     background: white;
     color: #212121; }
-    article header h2 {
-      margin: 0 0; }
-    article header a {
-      font-size: inherit;
-      text-decoration: none; }
-      article header a:visited {
-        color: brown; }
+  article h2, article h3 {
+    margin: 0 0; }
   article footer {
-    font-size: 0.5rem;
+    font-size: 0.875rem;
     margin: 0;
     padding: 0 0.5rem 0.5rem; }
-    article footer time {
-      font-size: 0.875rem; }
-    article footer address a {
-      font-size: 0.875rem; }
-    article footer ul {
-      margin: 0;
-      padding: 0;
-      list-style: none; }
-      article footer ul li {
-        display: inline; }
-        article footer ul li a {
-          font-size: 0.875rem; }
+  article header a {
+    text-decoration: none; }
+    article header a:visited {
+      color: brown; }
+  article footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    article footer ul li {
+      display: inline; }
+    article footer ul a:visited {
+      color: brown; }
 
-@media screen and (max-width: 767px) {
-  article {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0; } }
+#index {
+  margin: 0 10% 0 10%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: white;
+  color: #212121; }
+  #index a {
+    color: brown;
+    font-size: inherit; }
+  #index header {
+    background: white;
+    color: #212121; }
+  #index h2, #index h3 {
+    margin: 0 0; }
+  #index footer {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem; }
+  #index h3 {
+    border-top-style: dotted;
+    border-width: 1px;
+    width: 50%; }
+
+.pager {
+  margin: 0 10% 0 10%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: white;
+  color: #212121; }
+  .pager a {
+    color: brown;
+    font-size: inherit; }
+  .pager header {
+    background: white;
+    color: #212121; }
+  .pager h2, .pager h3 {
+    margin: 0 0; }
+  .pager footer {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem; }
+  .pager ul {
+    display: inline;
+    list-style: none; }
+    .pager ul .prev {
+      float: left; }
+    .pager ul .next {
+      float: right; }
+    .pager ul li a {
+      text-decoration: none; }
+      .pager ul li a:visited {
+        color: brown; }
+
+section {
+  margin: 0 10% 0 10%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #ddd;
+  color: #212121; }
+  section a {
+    color: brown;
+    font-size: inherit; }
+  section header {
+    background: #ddd;
+    color: #212121; }
+  section h2, section h3 {
+    margin: 0 0; }
+  section footer {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem; }
+  section li, section a, section time {
+    font-size: 0.875rem; }
+  section em {
+    font-size: inherit; }
 
 #banner {
   background: #ffaa00;
@@ -1062,20 +1127,16 @@ article {
 .license {
   text-align: center; }
   .license p, .license a {
-    font-size: 0.75em; }
+    font-size: 0.875rem; }
 
 aside {
   float: left; }
   aside ul {
     list-style: none; }
 
-@media screen and (max-width: 767px) {
-  aside {
-    display: none; } }
-
 #idx {
   float: right;
-  margin: 0 10%; }
+  margin: 0 10% 0 10%; }
   #idx input[type="submit"] {
     width: 30px;
     height: 30px;
@@ -1085,9 +1146,14 @@ aside {
     border: 1px solid darkgray; }
 
 @media screen and (max-width: 767px) {
+  article, #index, .pager, section {
+    margin: 0 0 0 0; }
+  aside {
+    display: none; }
   #idx {
     float: none;
-    margin: 0 0; } }
+    margin: 0 0 0 0; } }
+
 /* tag cloud */
 .tag-cloud {
   list-style: none;
