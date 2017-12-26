@@ -767,8 +767,36 @@ ul.auto-toc {
 
 article {
   margin: 0 10% 0 10%;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   background: white; }
+  article a {
+    color: brown; }
+  article header {
+    background: white;
+    color: #212121; }
+    article header h2 {
+      margin: 0 0; }
+    article header a {
+      font-size: inherit;
+      text-decoration: none; }
+      article header a:visited {
+        color: brown; }
+  article footer {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem; }
+    article footer time {
+      font-size: 0.875rem; }
+    article footer address a {
+      font-size: 0.875rem; }
+    article footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      article footer ul li {
+        display: inline; }
+        article footer ul li a {
+          font-size: 0.875rem; }
 
 @media screen and (max-width: 767px) {
   article {
@@ -813,7 +841,6 @@ aside {
     border-radius: 15px;
     line-height: 1px;
     background: #ffaa00;
-    color: #ffaa00;
     border: 1px solid darkgray; }
 
 @media screen and (max-width: 767px) {
