@@ -1137,6 +1137,8 @@ aside {
   float: left; }
   aside ul {
     list-style: none; }
+  aside img {
+    border: 0; }
 
 #idx {
   float: right;
