@@ -116,8 +116,6 @@ code {
 pre {
   overflow: auto;
   border-radius: 0 0.11111rem 0.11111rem 0;
-  background: inherited;
-  color: inherited;
   padding: 0.75rem;
   margin: 0.5rem; }
 
