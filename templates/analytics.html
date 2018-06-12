@@ -10,7 +10,7 @@
 </script>
 {% endif %}
 {% if PIWIK_URL and PIWIK_SITE_ID %}
-    <script type="text/javascript">
+    <script>
     {% if PIWIK_SSL_URL %}
         var pkBaseURL = "{{ PIWIK_SSL_URL }}";
     {% else %}
