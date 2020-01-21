@@ -1321,7 +1321,8 @@ article {
   margin: 0 10% 0 10%;
   padding: 0.5rem 1rem 0.5rem 1rem;
   background: white;
-  color: #212121; }
+  color: #212121;
+  word-wrap: break-word; }
   article a {
     color: brown;
     font-size: inherit; }
@@ -1354,7 +1355,8 @@ article {
   margin: 0 10% 0 10%;
   padding: 0.5rem 1rem 0.5rem 1rem;
   background: white;
-  color: #212121; }
+  color: #212121;
+  word-wrap: break-word; }
   #index a {
     color: brown;
     font-size: inherit; }
@@ -1378,7 +1380,8 @@ article {
   margin: 0 10% 0 10%;
   padding: 0.5rem 1rem 0.5rem 1rem;
   background: white;
-  color: #212121; }
+  color: #212121;
+  word-wrap: break-word; }
   .pager a {
     color: brown;
     font-size: inherit; }
@@ -1407,7 +1410,8 @@ section {
   margin: 0 10% 0 10%;
   padding: 0.5rem 1rem 0.5rem 1rem;
   background: #ddd;
-  color: #212121; }
+  color: #212121;
+  word-wrap: break-word; }
   section a {
     color: brown;
     font-size: inherit; }
