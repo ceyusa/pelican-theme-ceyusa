@@ -1325,19 +1325,6 @@ article {
   color: #212121;
   word-wrap: break-word;
   letter-spacing: -0.03px; }
-  article p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: 2em 0 0 -0.46em; }
-  article p.caption {
-    margin: 0 2em 0 2em;
-    font-size: 0.8125rem;
-    color: #424242; }
-  article .figure img {
-    margin: 1em 0 0 0; }
   article a {
     color: brown;
     font-size: inherit; }
@@ -1365,6 +1352,15 @@ article {
       display: inline; }
     article footer ul a:visited {
       color: brown; }
+  article .figure img {
+    margin: 1em 0 0 0; }
+  article p.caption {
+    margin: 0 2em 0 2em;
+    font-size: 0.8125rem;
+    color: #424242; }
+  article p {
+    display: block;
+    margin-block-end: 1em; }
 
 #index {
   margin: 0 10% 0 10%;
@@ -1373,19 +1369,6 @@ article {
   color: #212121;
   word-wrap: break-word;
   letter-spacing: -0.03px; }
-  #index p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: 2em 0 0 -0.46em; }
-  #index p.caption {
-    margin: 0 2em 0 2em;
-    font-size: 0.8125rem;
-    color: #424242; }
-  #index .figure img {
-    margin: 1em 0 0 0; }
   #index a {
     color: brown;
     font-size: inherit; }
@@ -1412,19 +1395,6 @@ article {
   color: #212121;
   word-wrap: break-word;
   letter-spacing: -0.03px; }
-  .pager p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: 2em 0 0 -0.46em; }
-  .pager p.caption {
-    margin: 0 2em 0 2em;
-    font-size: 0.8125rem;
-    color: #424242; }
-  .pager .figure img {
-    margin: 1em 0 0 0; }
   .pager a {
     color: brown;
     font-size: inherit; }
@@ -1456,19 +1426,6 @@ section {
   color: #212121;
   word-wrap: break-word;
   letter-spacing: -0.03px; }
-  section p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: 2em 0 0 -0.46em; }
-  section p.caption {
-    margin: 0 2em 0 2em;
-    font-size: 0.8125rem;
-    color: #424242; }
-  section .figure img {
-    margin: 1em 0 0 0; }
   section a {
     color: brown;
     font-size: inherit; }
@@ -1572,6 +1529,7 @@ aside {
   padding-top: 25px;
   position: relative;
   height: 0;
+  margin-top: 1em;
   /* inverse of 16:9 aspect ratio */ }
   .youtube-16x9 iframe {
     position: absolute;
@@ -1586,6 +1544,7 @@ aside {
   padding-top: 25px;
   position: relative;
   height: 0;
+  margin-top: 1em;
   /* inverse of 4:3 aspect ratio */ }
   .youtube-4x3 iframe {
     position: absolute;
