@@ -12,14 +12,14 @@
   {% if SOCIAL %}
   <ul>
     {% for name, link in SOCIAL %}
-    <li><a href="{{ link }}"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/{{ name }}.png" alt="{{ name }}"/></a></li>
+    <li><a rel="me" href="{{ link }}"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/{{ name }}.png" title="{{ name }}" alt="{{ name }}"/></a></li>
     {% endfor %}
   </ul>
   {% endif %}
   {% if LINKS %}
   <ul>
     {% for name, link in LINKS %}
-    <li><a href="{{ link }}"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/{{ name }}.png" alt="{{ name }}"/></a></li>
+    <li><a href="{{ link }}"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/{{ name }}.png" title="{{ name }}" alt="{{ name }}"/></a></li>
     {% endfor %}
   </ul>
   {% endif %}
